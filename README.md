@@ -1,8 +1,8 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicas
+# Bookstore Library
 
-In this Project we create  a applicaction using React, also implementing the feature of diferentes routes
+I create the first Bookstore Library in React
 
 ## Getting Started
 
@@ -17,6 +17,7 @@ To get a local copy up and running follow these simple example steps.
 
 # see live demo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/afc0127f-ab1d-4a17-88d7-495dd73fc8cb/deploy-status)](https://app.netlify.com/sites/bookstorelibrary/deploys)
 
 ## Built With
 
