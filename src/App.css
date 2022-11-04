@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.Bookstore {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.stylemenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 1em;
+}
+
+.linkstyles {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+}
+
+#root {
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 var(--black-5);
+  background-color: #fafafa;
+}
+
+.styleaddnewbook {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 8em;
+}
+
+input {
+  width: 16em;
+}
+
+.styleheadaddbook {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  border-top: solid 1px #e8e8e8;
+}
+
+.stylebook {
+  list-style: none;
+}
+
+a {
+  font-size: medium;
+}
