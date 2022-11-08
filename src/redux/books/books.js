@@ -1,5 +1,5 @@
-const ADD_BOOK = 'redux/books/ADD_BOOK';
-const REM_BOOK = 'redux/books/REM_BOOK';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REM_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 export default function reducer(state = [], action = {}) {
   switch (action.type) {
