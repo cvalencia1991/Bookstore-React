@@ -5,8 +5,9 @@ import { addBook } from '../redux/books/books';
 
 const Booksform = () => {
   const bookinfo = useSelector((state) => state.book);
-  const bookid = bookinfo.length;
-
+  // eslint-disable-next-line radix
+  const keys = [0, ...(bookinfo.map((book) => parseInt(book.id)))];
+  const bookid = Math.max(...keys) + 1;
   const [book, setBook] = useState({
     author: '',
     title: '',

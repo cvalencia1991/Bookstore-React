@@ -3,12 +3,12 @@ const REM_BOOK = 'REM_BOOK';
 
 const initialbooks = [
   {
-    id: 0,
+    id: 1,
     title: 'Cien años de soledad',
     author: 'Gabriel garcia',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Rich dad,Poor dad',
     author: 'Robert T. Kiyosaki',
   },

@@ -12,7 +12,11 @@ const Book = () => {
   return (
     <>
       {book.map((bookinfo) => (
-        <div key={bookinfo.id} className=" d-flex flex-column gap-3 m-3 align-items-center flex-direction-column justify-content-center">
+        <div
+          key={bookinfo.id}
+          id={bookinfo.id}
+          className=" d-flex flex-column gap-3 m-3 align-items-center flex-direction-column justify-content-center"
+        >
           <div className="d-flex gap-3">
             <ul className="stylebook">
               <li>
