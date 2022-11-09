@@ -1,13 +1,26 @@
-const ADD_BOOK = 'bookstore/books/ADD_BOOK';
-const REM_BOOK = 'bookstore/books/REMOVE_BOOK';
+const ADD_BOOK = 'ADD_BOOK';
+const REM_BOOK = 'REM_BOOK';
 
-export default function reducer(state = [], action = {}) {
+const initialbooks = [
+  {
+    id: 0,
+    title: 'Cien años de soledad',
+    author: 'Gabriel garcia',
+  },
+  {
+    id: 1,
+    title: 'Rich dad,Poor dad',
+    author: 'Robert T. Kiyosaki',
+  },
+];
+
+export default function reducer(state = initialbooks, action = {}) {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.payload];
     case REM_BOOK:
       return [
-        state.filter((item) => item !== action.payload),
+        state.filter((item) => item.id !== action.payload),
       ];
     default:
       return state;
@@ -19,5 +32,5 @@ export function addBook(obj) {
 }
 
 export function removeBook(obj) {
-  return { type: ADD_BOOK, payload: obj };
+  return { type: REM_BOOK, payload: obj };
 }

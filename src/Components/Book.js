@@ -1,23 +1,31 @@
 import Button from 'react-bootstrap/Button';
-import PropTypes from 'prop-types';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
-const Book = (props) => {
-  Book.propTypes = {
-    title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+const Book = () => {
+  const book = useSelector((state) => state.book);
+  const dispatch = useDispatch();
+  const handleDelete = (id) => {
+    dispatch(removeBook(id));
   };
-  const { title, author } = props;
+
   return (
-    <div className="d-flex align-items-center justify-content-center gap-3 m-3">
-      <ul className="m-0 p-0 stylebook">
-        <li>
-          {title}
-          :
-          {author}
-        </li>
-      </ul>
-      <Button>Remove</Button>
-    </div>
+    <>
+      {book.map((bookinfo) => (
+        <div key={bookinfo.id} className=" d-flex flex-column gap-3 m-3 align-items-center flex-direction-column justify-content-center">
+          <div className="d-flex gap-3">
+            <ul className="stylebook">
+              <li>
+                {bookinfo.author}
+                :
+                {bookinfo.title}
+              </li>
+            </ul>
+            <Button onClick={() => handleDelete(bookinfo.id)}>Remove</Button>
+          </div>
+        </div>
+      ))}
+    </>
   );
 };
 
