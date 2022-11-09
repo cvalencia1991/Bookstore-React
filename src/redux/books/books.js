@@ -19,9 +19,7 @@ export default function reducer(state = initialbooks, action = {}) {
     case ADD_BOOK:
       return [...state, action.payload];
     case REM_BOOK:
-      return [
-        state.filter((item) => item.id !== action.payload),
-      ];
+      return state.filter((item) => item.id.toString() !== action.payload.toString());
     default:
       return state;
   }

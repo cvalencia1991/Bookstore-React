@@ -8,7 +8,7 @@ const Book = () => {
   const handleDelete = (id) => {
     dispatch(removeBook(id));
   };
-
+  console.log(book);
   return (
     <>
       {book.map((bookinfo) => (
