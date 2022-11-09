@@ -20,7 +20,7 @@ export default function reducer(state = initialbooks, action = {}) {
       return [...state, action.payload];
     case REM_BOOK:
       return [
-        state.filter((item) => item !== action.payload),
+        state.filter((item) => item.id !== action.payload),
       ];
     default:
       return state;
