@@ -62,13 +62,13 @@ input {
 
 .stylebook {
   list-style: none;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 a {
   font-size: medium;
 }
 
-.stylestatus{
+.stylestatus {
   display: flex;
 }
