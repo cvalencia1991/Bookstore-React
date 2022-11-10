@@ -8,5 +8,4 @@ const store = configureStore({
     status: CheckingReducer,
   },
 });
-
 export default store;
