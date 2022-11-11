@@ -5,7 +5,7 @@ const Books = () => (
   <>
     <Book />
     <div>
-      <h1 className="styleheadaddbook">Add new book </h1>
+      <h1 className="m-3 styleheadaddbook">Add new book </h1>
       <Booksform />
     </div>
   </>
