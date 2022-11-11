@@ -269,11 +269,11 @@ li {
   border: none;
 }
 
-.stylelogo{
+.stylelogo {
   width: 4%;
 }
 
-.styleinputs{
+.styleinputs {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: normal;
@@ -284,12 +284,13 @@ li {
   border: solid 1px #e8e8e8;
 }
 
-.line{
+.line {
   width: 1px;
   height: 55px;
   background: #e8e8e8;
 }
-.styleinputs1{
+
+.styleinputs1 {
   width: 50%;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
