@@ -10,6 +10,8 @@
   line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
+  display: flex;
+  align-items: center;
 }
 
 .stylemenu {
