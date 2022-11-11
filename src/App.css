@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
 
 .Bookstore {
   font-family: 'Montserrat', sans-serif;
@@ -54,7 +54,7 @@ input {
 
 .styleheadaddbook {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -68,17 +68,17 @@ input {
   list-style: none;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  border: solid 1px #e8e8e8;
   background: white;
   padding-top: 1em;
   align-items: center;
   justify-content: space-between;
 }
 
-a {
+.linkstyles > a {
   font-size: medium;
-  text-decoration: none !important;
-  color: black !important;
+  text-decoration: none;
+  color: black;
 }
 
 .stylebookitem {
@@ -98,7 +98,7 @@ a {
   letter-spacing: normal;
   text-decoration: none;
   margin: 0;
-  color: var(--bs-gray-500);
+  color: #6c757d;
 }
 
 li {
@@ -113,6 +113,7 @@ li {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
+  letter-spacing: -0.2px;
 }
 
 .styleathor {
@@ -266,4 +267,36 @@ li {
   border-radius: 3px;
   background-color: #0290ff;
   border: none;
+}
+
+.stylelogo{
+  width: 4%;
+}
+
+.styleinputs{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  border: solid 1px #e8e8e8;
+}
+
+.line{
+  width: 1px;
+  height: 55px;
+  background: #e8e8e8;
+}
+.styleinputs1{
+  width: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  border: solid 1px #e8e8e8;
 }

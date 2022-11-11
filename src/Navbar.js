@@ -11,11 +11,11 @@ const Navbar = () => {
     {
       id: 2,
       path: '/categories',
-      text: 'categories',
+      text: 'Categories',
     },
   ];
   return (
-    <nav className="d-flex ps-3 align-items-center stylenav justify-content-between">
+    <nav className="d-flex p-3 align-items-center stylenav justify-content-between">
       <div className="Bookstore">
         Bookstore CMS
         <div>
@@ -28,7 +28,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <img style={{ width: '4%' }} src={logo} alt="" />
+      <img className="stylelogo" src={logo} alt="" />
     </nav>
   );
 };

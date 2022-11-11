@@ -52,6 +52,7 @@ const Book = () => {
               </div>
             </div>
           </div>
+          <div className="line" />
           <div className="styleupdate">
             <div className="currentchapter">
               CURRENT CHAPTER

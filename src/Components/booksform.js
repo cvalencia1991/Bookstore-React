@@ -29,9 +29,9 @@ const Booksform = () => {
 
   return (
     <form onSubmit={handleSubmit} className="m-3 d-flex justify-content-between align-items-stretch gap-3 flex-direction-row">
-      <input style={{ width: '50%' }} name="title" type="text" placeholder="Booktitle" onChange={handleChange} required />
-      <input name="author" type="author" placeholder="Author" onChange={handleChange} required />
-      <input name="category" placeholder="Category" type="text" list="items" onChange={handleChange} />
+      <input className="styleinputs1" name="title" type="text" placeholder="Booktitle" onChange={handleChange} required />
+      <input className="styleinputs" name="author" type="author" placeholder="Author" onChange={handleChange} required />
+      <input className="styleinputs" name="category" placeholder="Categories" type="text" list="items" onChange={handleChange} />
       <datalist id="items">
         <option>Drama</option>
         <option>Action</option>
