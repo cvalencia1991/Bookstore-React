@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
 
 .Bookstore {
   font-family: 'Montserrat', sans-serif;
@@ -9,6 +10,8 @@
   line-height: normal;
   letter-spacing: normal;
   color: #0290ff;
+  display: flex;
+  align-items: center;
 }
 
 .stylemenu {
@@ -51,10 +54,11 @@ input {
 
 .styleheadaddbook {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
+  font-size: x-large;
   letter-spacing: -0.18px;
   color: #888;
   border-top: solid 1px #e8e8e8;
@@ -62,13 +66,238 @@ input {
 
 .stylebook {
   list-style: none;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #e8e8e8;
+  background: white;
+  padding-top: 1em;
+  align-items: center;
+  justify-content: space-between;
 }
 
-a {
+.linkstyles > a {
   font-size: medium;
+  text-decoration: none;
+  color: black;
+}
+
+.stylebookitem {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+}
+
+.stylecategory {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  margin: 0;
+  color: #6c757d;
+}
+
+li {
+  text-decoration: none;
+}
+
+.styletittle {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.styleathor {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.stylenav {
+  border-bottom: solid 1px #e8e8e8;
+  background: white;
+}
+
+.itemsstyle {
+  display: flex;
+  list-style: none;
+}
+
+.selectitems {
+  border: none;
+  background: none;
+  text-align: inherit;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  width: 6em;
+}
+
+.selectitems1 {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: none;
+  border-bottom: none;
+  background: none;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  text-align: center;
+}
+
+.selectitems2 {
+  border: none;
+  background: none;
+  text-align: inherit;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  padding-left: 1em;
+}
+
+.stylecircleprogress {
+  width: 4.25rem;
+  height: 4.25rem;
+}
+
+.stylepercentage {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.completed {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .stylestatus {
   display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.updateprogress {
+  font-family: 'Roboto Slab', serif;
+  width: 11.5rem;
+  height: 2.063rem;
+  background-color: #0290ff;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+}
+
+.styleupdate {
+  width: 25%;
+}
+
+.currentchapter {
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.Addnewbookstyle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+}
+
+.stylelogo {
+  width: 4%;
+}
+
+.styleinputs {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  border: solid 1px #e8e8e8;
+}
+
+.line {
+  width: 1px;
+  height: 55px;
+  background: #e8e8e8;
+}
+
+.styleinputs1 {
+  width: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  border: solid 1px #e8e8e8;
 }
